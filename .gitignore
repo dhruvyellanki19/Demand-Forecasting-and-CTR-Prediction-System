@@ -10,3 +10,5 @@ ssh keys.pub
 # macOS system file
 .DS_Store
 
+venv/
+
