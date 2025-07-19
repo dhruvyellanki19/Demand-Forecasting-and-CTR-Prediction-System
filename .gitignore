@@ -1,29 +1,12 @@
-# macOS
+# Ignore all local data
+data/
+
+# Ignore all SSH keys and secrets
+ssh keys
+ssh keys.pub
+*.pem
+*.key
+
+# macOS system file
 .DS_Store
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.egg-info/
-
-# Environments
-.env
-.venv/
-env/
-venv/
-
-# Logs and output
-logs/
-*.log
-
-# Notebooks
-.ipynb_checkpoints/
-
-# System
-.idea/
-.vscode/
-
-
 
