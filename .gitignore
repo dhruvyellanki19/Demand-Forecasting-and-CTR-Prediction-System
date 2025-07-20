@@ -1,14 +1,45 @@
-# Ignore all local data
+# ─────────────────────────────
+# ✅ DATA FILES (do not track local or sensitive data)
+# ─────────────────────────────
 data/
+!data/README.md      # Allow placeholder
 
-# Ignore all SSH keys and secrets
-ssh keys
-ssh keys.pub
+# ─────────────────────────────
+# ✅ SSH / SECRETS / KEYS
+# ─────────────────────────────
 *.pem
 *.key
+*.pub
+*.env
+secrets/
+ssh_keys*
+id_*
 
-# macOS system file
+# ─────────────────────────────
+# ✅ macOS / Python / VSCode Noise
+# ─────────────────────────────
 .DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
+# VSCode
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs / artifacts
+*.log
+logs/
+models/
+exports/
+
+# ─────────────────────────────
+# ✅ ENVIRONMENTS / PACKAGES
+# ─────────────────────────────
+.venv/
+env/
 venv/
 
